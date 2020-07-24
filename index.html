@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Tiny Wings</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <div id="game">
+
+            <!--<div id="player">
+                <div></div>
+            </div>-->
+
+            <div class="screen" id="screen_02">
+
+                <canvas id="game_canvas" width="1000" height="560"></canvas>
+
+                <canvas id="debug_canvas" width="1000" height="560"></canvas>
+
+                <div id="screen_02__day_night_disk"></div>
+
+                <label id="screen_02__scores_label">0</label>
+
+                <button class="image_button" id="screen_02__pause_button"></button>
+                <button class="image_button" id="screen_02__play_button"></button>
+
+            </div>
+
+            <div class="screen" id="start_screen">
+
+                <button class="image_button" id="start_screen__play_button"></button>
+
+            </div>
+
+            <div class="screen" id="game_over_screen">
+
+                <div>
+
+                    <label>Game Over</label>
+
+                    <div>
+                        <div>
+                            <label>SCORE:</label><label id="game_over_screen__scores_label">0</label>
+                        </div>
+                        <div>
+                            <label>COINS:</label><label id="game_over_screen__coins_label">0</label>
+                        </div>
+                        <div>
+                            <label>DISTANCE:</label><label id="game_over_screen__distance_label">0</label>
+                        </div>
+                    </div>
+
+                    <button class="image_button" id="game_over_screen__restart_button"></button>
+
+                </div>
+
+            </div>
+
+            <div id="game_screen_hider" style="position: absolute; width: 100%; height: 100%; background-color: white"></div>
+
+            <label id="fps_counter" style="position: absolute; left: 10px; top: 10px;"></label>
+
+        </div>
+
+        <script src="js/pixi.min.js"></script>
+        <script src="js/pixi-timer.js"></script>
+        <script src="js/gsap.min.js"></script>
+        <script src="js/box2d.min.js"></script>
+
+        <script src="js/game.js"></script>
+
+    </body>
+
+</html>
