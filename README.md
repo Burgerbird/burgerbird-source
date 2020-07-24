@@ -46,7 +46,10 @@ icons": [
       "sizes": "512x512"
     }
 ```
-    
+  After tests, I recommend to remove all
+console.log()
+calls
+
    On desktop game can be 1000 x 560 max. If that not needed, replace
    # updateLayout(event)
    to
