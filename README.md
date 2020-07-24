@@ -3,7 +3,7 @@
 # Added PWA functionality.
 
 You can add another icons, if needed.
-```
+```ruby
 icons": [
     {
       "src": "/assets/images/logo-72x72.png",
@@ -45,13 +45,13 @@ icons": [
       "type": "image/png",
       "sizes": "512x512"
     }
-    ```
+```
     
    On desktop game can be 1000 x 560 max. If that not needed, replace
    # updateLayout(event)
    to
    
-   ```
+```ruby
    function updateLayout(event)
 	{
 		TinyWings.cont.style.width = window.innerWidth + "px";
@@ -74,5 +74,5 @@ icons": [
 			night_overlay.y = -pixi_app.stage.y / pixi_app.stage.scale.x;
 		}
 	}
-  ```
+```
 
