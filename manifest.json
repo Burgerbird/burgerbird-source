@@ -1,0 +1,27 @@
+{
+  "name": "Tiny Wings",
+  "short_name": "Tiny Wings",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#D7E8FF",
+  "theme_color": "#D7E8FF",
+  "orientation": "landscape-primary",
+
+  "icons": [
+    {
+      "src": "assets/images/app_icons/icon_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/images/app_icons/icon_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/app_icons/icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

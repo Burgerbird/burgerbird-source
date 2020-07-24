@@ -692,13 +692,27 @@ function Player(resources, game_canvas)
 
 	game_over_screen.restart_button.addEventListener("click", startGame);
 
-	window.addEventListener("load", init);
 	window.addEventListener("resize", updateLayout);
+
+	if (document.readyState != "complete")
+	{
+		window.addEventListener("load", init);
+	}
+	else
+	{
+		init();
+	}
 
 	var fps_counter = document.querySelector("#fps_counter");
 
 	function init(event)
 	{
+		if("serviceWorker" in navigator)
+		{
+			navigator.serviceWorker.register("js/sw.js")
+			.then(reg => console.log("service worker registered"))
+			.catch(error => console.log("service worker not registered", error));
+		}
 		pixi_app.loader.add("player", "assets/images/player.png");
 		pixi_app.loader.add("hills", "assets/images/hills.png");
 		pixi_app.loader.add("coin", "assets/images/coin.png");
