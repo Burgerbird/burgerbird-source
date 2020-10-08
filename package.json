@@ -1,0 +1,21 @@
+{
+  "name": "burgerbird-source",
+  "version": "1.0.1",
+  "description": "Burgerbird!!!",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run browser-sync",
+    "browser-sync": "browser-sync start --files '**/*' --server '.' --start-path ''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgbag/burgerbird-source.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rgbag/burgerbird-source/issues"
+  },
+  "homepage": "https://github.com/rgbag/burgerbird-source#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
